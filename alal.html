@@ -44,7 +44,7 @@
 
 <input type="date">
 
-<input type="Number" placeholder="Age">
+<input type="text" placeholder="Age" maxlength="3" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
 
 <input type="text" placeholder="Address">
 <input type="text" placeholder="Username">
@@ -80,4 +80,5 @@ document.getElementById("login").classList.remove("hidden");
 </script>
 
 </body>
+
 </html>
